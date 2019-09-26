@@ -60,3 +60,14 @@ for first in range(len(dice)):
 		worksheet.set_column(2, 2, len(str(comparison)) )
 
 workbook.close()
+
+''' ALTERNATIVE COLUMN AUTOFIT CODE
+
+import win32com.client as win32
+excel = win32.gencache.EnsureDispatch('Excel.Application')
+wb = excel.Workbooks.Open('file.xlsx')
+ws = wb.Worksheets("Sheet1")
+ws.Columns.AutoFit()
+wb.Save()
+excel.Application.Quit()
+'''
