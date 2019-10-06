@@ -48,14 +48,7 @@ def die_color(key):
        }
 	return switch[key]
 
-'''for matrix in range(len(results)):
-	print(matrix_title[matrix])
-	for row in results[matrix]:
-		print(row)'''
-
-
 counter = -1
-
 for first in range(len(dice)):
 	for second in range(first + 1, len(dice)):
 		counter += 1
