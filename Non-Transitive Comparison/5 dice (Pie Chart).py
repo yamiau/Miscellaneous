@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 
 def die_type(key):
 	switch = {
-	      0: "BiZe", 	#Billion/Zero
-	      1: "Thre", 	#Three Only
-	      2: "FoZe", 	#Four/Zero
-	      3: "FiOn", 	#Five/One
-	      4: "SiTw" 	#Six/Two
+	      0: "Billion-Zero", 	#Billion/Zero
+	      1: "Three-Only", 	#Three Only
+	      2: "Four-Zero", 	#Four/Zero
+	      3: "Five-One", 	#Five/One
+	      4: "Six-Two" 	 	#Six/Two
        }
 	return switch[key]                       
 
@@ -39,11 +39,11 @@ for first in range(len(dice)):
 
 def die_color(key):
 	switch = {
-	    "BiZe" : "brown",
-	    "Thre" : "yellowgreen",
-	    "FoZe" : "coral",
-	    "FiOn" : "skyblue",
-	    "SiTw" : "gold",
+	    "Billion-Zero" : "sienna",
+	    "Three-Only" : "yellowgreen",
+	    "Four-Zero" : "coral",
+	    "Five-One" : "skyblue",
+	    "Six-Two" : "gold",
 	    "Draw" : "gray"
        }
 	return switch[key]
@@ -64,7 +64,7 @@ for first in range(len(dice)):
 				else:
 					draw_score += 1
 								
-		labels = (die_type(first), die_type(second), "Draw")
+		labels = ("", "", "Draw")
 		legend_labels = (die_type(first) + " " +  str(dice[first]), 
 			     die_type(second) + " " + str(dice[second]), 
 			     "Draw")

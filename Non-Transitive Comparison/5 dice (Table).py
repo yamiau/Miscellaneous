@@ -39,7 +39,7 @@ for first in range(len(dice)):
 
 def die_color(key):
 	switch = {
-	    "BiZe" : "brown",
+	    "BiZe" : "sienna",
 	    "Thre" : "green",
 	    "FoZe" : "magenta",
 	    "FiOn" : "blue",
