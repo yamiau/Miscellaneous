@@ -4,7 +4,7 @@ import random
 def die_type(key):
 	switch = {
 	      0: "BiZe", 	#Billion/Zero
-	      1: "Three", 	#Three Only
+	      1: "Thre", 	#Three Only
 	      2: "FoZe", 	#Four/Zero
 	      3: "FiOn", 	#Five/One
 	      4: "SiTw" 	#Six/Two
