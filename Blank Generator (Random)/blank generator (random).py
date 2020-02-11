@@ -14,6 +14,8 @@ print(words)
 def check_format(word):
 	if "\n" in word:
 		word = word.split("\n")
+		return blankLine(word)
+	elif word[0] in punctuation:
 		return blankFirst(word)
 	elif word[-1] in punctuation:
 		return blankLast(word)
@@ -32,9 +34,15 @@ def check_format(word):
 	else:
 		return blank(word)
 
-def blankFirst(word):
+def blankLine(word):
 	blanked_word = word[0] + "\n"
 	for i in range(0, len(word[1])):
+		blanked_word += "_"
+	return blanked_word
+
+def blankFirst(word):
+	blanked_word = word[0]
+	for i in range(1, len(word)):
 		blanked_word += "_"
 	return blanked_word
 

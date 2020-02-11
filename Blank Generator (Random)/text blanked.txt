@@ -1,36 +1,53 @@
-____ ahí
-Dios estaba ____ ahí.
-__ __ ______ ___ pasado
-_____ _______ ___ ________ __ claustros
-Y ______ __ _____ de leche.
-Predicar
-Tu rostro me recordará
-______ bendito
-Acto de ______ nuestra.
-Trago la luna
-Porque yo siempre caigo
-En tu claridad
-Solo para estar
-Perdido __ las llamas de tu voz.
-________ rostro __ recordará
-Abismo bendito
-____ __ ______ nuestra.
-Yo soy __ voz
-___ que clama
-En el desierto.
-No __ ___ confianza
-_______ toda desepción
-Lleno de pura distancia
-El hueco que __ __ cara.
-______ para castrar
-A __ hijo propio
-Lo hago
-__ hago sin perdón
-Rechazo todo
-___ no ____ tu.
-__ __ ___ confianza
-_______ ____ desepción
-_____ de ____ distancia
-__ hueco ___ __ mi cara.
-Tus ______ ___ mi boca no existen.
-Fuego ___ ________ nuestra forma de hablar. 
+Achilles had overtaken the ________, and had seated himself comfortably on its back.
+"So you've got __ the end of our race-course?" said the Tortoise. "Even though it does consist __ an infinite series of distances? I thought some wiseacre or other had proved that ___ thing couldn't be done?"
+"It can be done," said Achilles. "It has been done! Solvitur ambulando. You see the distances were constantly diminishing; ___ so --"
+"But __ they had been constantly increasing?" the Tortoise interrupted "How then?"
+"Then I shouldn't be here," Achilles modestly _______; "and you would have got several times round the world, by this time!"
+"You flatter me - flatten, I mean" said the Tortoise; "for you are a heavy weight, and no mistake! Well now, would you like to hear of _ race-course, that most ______ fancy they can get to the end of in two or three steps, while it really consists of an infinite number of distances, each one longer than the previous one?"
+"Very much indeed!" said the _______ warrior, as he drew from his ______ (few Grecian warriors possessed pockets in those days) an enormous note-book ___ a pencil. "Proceed! ___ speak slowly, please! Shorthand isn't invented yet!"
+"That beautiful First Proposition of Euclid!" the Tortoise murmured dreamily. "You admire Euclid?"
+"Passionately! So ___, at least, as one can admire a treatise that won't __ published for some centuries to come!"
+"Well, now, let's take a little bit of the argument in that First Proposition -- just two steps, and the conclusion drawn ____ them. Kindly enter them in your notebook. And in order to refer to them conveniently, let's call them A, B, and Z: --
+(A) Things that are equal to the same are equal to each other.
+___ The two _____ __ this Triangle are things that are _____ to the same.
+(Z) The ___ sides of this Triangle are equal to each other.
+Readers of Euclid will grant, I suppose, that Z follows logically from A and B, so that any one who accepts A and B as true, must accept Z as true?"
+"Undoubtedly! The youngest child in a High School -- as soon as High Schools are ________, which will not be till ____ ___ thousand _____ later -- will grant that."
+"And __ some reader had not yet accepted A and B as true, he _____ still accept the sequence as a valid one, I suppose?"
+"No doubt such _ reader might exist. He might say 'I accept as true the Hypothetical Proposition that, if A and B be true, _ must be true; ___, I don't accept A ___ B as true.' Such a reader would __ wisely in __________ Euclid, and taking to football."
+"And might there not also he some reader who would say 'I accept A and B as true, but I don't accept the Hypothetical '?"
+"Certainly there might. He, also, ___ better take to football."
+"And neither of these readers," ___ Tortoise continued, "is as yet under any logical necessity to accept Z __ true?"
+"Quite so," Achilles assented.
+"Well, now, _ want you to consider me as a reader of the second ____, and to force me, logically, to accept Z as true."
+"A tortoise playing football would be -- " Achilles was beginning
+___ an anomaly, of course," the Tortoise hastily interrupted. "Don't wander from the point. Let's have Z first, and football afterwards!"
+"I'm to force you __ accept _, am I?" Achilles said musingly. "And your present position is that you accept _ and _, but you don't accept the Hypothetical --"
+"Let's call it C," said the Tortoise.
+"-- but you don't accept
+(C) If A and B are true, Z must be true. "
+"That is my present position," said the Tortoise.
+"Then I must ask you to accept C."
+"I'll do so," said the Tortoise, "as soon as you've entered it in that note-book of yours. What else have you ___ in it?"
+"Only a few memoranda," said Achilles, _________ fluttering the ______: "a few memoranda of -- of the battles in _____ I have distinguished myself!"
+"Plenty of blank leaves, I ____" the Tortoise cheerily remarked. "We _____ need them all!" (Achilles shuddered.) "Now write as I dictate: --
+(A) Things that arc equal to the ____ are equal to each other.
+___ The two sides of this Triangle are things ____ are _____ to the same.
+(C) If A and B are true, Z must be true.
+(Z) The two sides of this Triangle are equal to ____ other."
+____ should call it D, not Z," said Achilles. "It comes next to the other three. If you accept A and B ___ C, you must accept Z."
+"And why must I?"
+"Because it _______ logically from them. If A and B and C are true, Z must be true. You don't dispute that, _ imagine?"
+"If A ___ B and C are true, Z must he true," the Tortoise thoughtfully repeated. "That's another ____________, isn't __? And, if I failed to see ___ truth, I might accept A and B and C', and still not accept Z. mightn't I?"
+"You might," the candid hero admitted; "though such obtuseness would certainly be phenomenal. Still, the event is possible. So I must ask you to grant one more Hypothetical."
+"Very good. I'm quite willing to grant it, as soon as you've _______ it down. We will call it
+(D) If A and _ and C are true, Z must be true.
+"Have you entered that in your notebook?"
+"I _____" Achilles joyfully exclaimed, as he ran the ______ into its sheath. "And at last we've got to the ___ __ this ideal race-course! ___ that ___ accept A and _ and C ___ D, __ course you accept Z."
+"Do I?" said the Tortoise innocently. "Let's make that quite clear. I accept A and B and C and D. Suppose I still refused to accept Z?"
+"Then Logic would force you to do ___" Achilles triumphantly replied. "Logic would tell you 'You can't help ________. Now that you've accepted A and B and _ ___ D, you must accept Z!' So you've no choice, you see."
+"Whatever Logic is good enough to tell me is worth writing down," said the Tortoise. "So enter it in your book, please. We will ____ it
+(E) If A and B and C and D are true, Z must __ true. Until I've granted ____, of course I needn't grant Z. So it's quite a necessary step, you see?"
+"I see," ____ Achilles; and there was a _____ of sadness in his tone.
+Here narrator, having pressing business at the Bank, was obliged to leave ___ happy pair, and did not again pass the spot until some months afterwards. When he did so, Achilles ___ still seated on the back of ___ much-enduring Tortoise, and was writing in his note-book, which appeared __ be nearly full. The Tortoise was saying, "Have you got that last step written down? Unless I've lost count, that makes a thousand and one. There are several millions more to come. And would you mind, as a personal favour, considering ____ a lot of instruction this ________ __ ours will _______ for the Logicians of the Nineteenth Century -- would you mind adopting a pun that my cousin the Mock-Turtle will then make, and allowing yourself to be re-named Taught-Us?"
+___ you please!" replied the weary warrior, in the hollow tones of despair, as he ______ his face in his hands. "Provided that you, for ____ part, will adopt a pun the Mock-Turtle never made, and allow yourself to be re-_____ A Kill-Ease!" 
