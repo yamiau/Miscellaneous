@@ -37,19 +37,19 @@ def check_format(word):
 def blankLine(word):
 	blanked_word = word[0] + "\n"
 	for i in range(0, len(word[1])):
-		blanked_word += "_"
+		blanked_word += "__"
 	return blanked_word
 
 def blankFirst(word):
 	blanked_word = word[0]
 	for i in range(1, len(word)):
-		blanked_word += "_"
+		blanked_word += "__"
 	return blanked_word
 
 def blankLast(word):
 	blanked_word = ""
 	for i in range(0, len(word) -1):
-		blanked_word += "_"
+		blanked_word += "__"
 	blanked_word += word[-1]
 	return blanked_word
 
@@ -57,30 +57,30 @@ def blankBracketed(word, setting):
 	if setting == 0:
 		blanked_word = word[0]
 		for i in range(1, len(word) -1):
-			blanked_word += "_"
+			blanked_word += "__"
 		blanked_word += word[-1]
 	elif setting == 1:
 		blanked_word = word[0]
 		for i in range(1, len(word)):
-			blanked_word += "_"
+			blanked_word += "__"
 	elif setting == 1:
 		blanked_word = word[0]
 		for i in range(0, len(word) -1):
-			blanked_word += "_"
+			blanked_word += "__"
 		blanked_word += word[-1]	
 	return blanked_word
 
 def blankContracted(word, sign):
 	blanked_word = word[0] + sign
 	for i in range(len(word[1])):
-		blanked_word += "_"
+		blanked_word += "__"
 	
 	return blanked_word
 
 def blank(word):
 	blanked_word = ""
 	for i in range(len(word)):
-		blanked_word += "_"
+		blanked_word += "__"
 	return blanked_word
 
 blanked = []
