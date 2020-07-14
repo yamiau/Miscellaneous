@@ -36,19 +36,19 @@ needs_onset = False if len(str_index) == len(str(index)) else True
 endex = int(input("Ending at index: "))
 extension = str(input("Enter file extension: "))
 extension = extension.lower() if "." in extension else "." + extension.lower()
-path_name = str(input("Enter saving directory path: "))
+path = str(input("Enter saving directory path: "))
 
-if not os.path.isdir(path_name):
-	if path_name[-1] == "\\" :
-		path_name = path_name[0:len(path_name) -1]
-	os.mkdir(path_name)
+if not os.path.isdir(path):
+	if path[-1] == "\\" :
+		path = path[0:len(path) -1]
+	os.mkdir(path)
 	
 if needs_onset:
 	for i in range(index, endex+1):
 		onset = find_onset(str_index, index)
 		file_name = onset + str(index) + extension
 		url = base_url + file_name
-		full_path = path_name + "\\" + file_name
+		full_path = path + "\\" + file_name
 		save_from_url(onset, index,url, full_path)
 		index += 1
 else:
@@ -56,6 +56,6 @@ else:
 		onset = ""
 		file_name = str(index) + extension
 		url = base_url + file_name
-		full_path = path_name + "\\" + file_name
+		full_path = path + "\\" + file_name
 		save_from_url(onset, index,url, full_path)
 		index += 1
