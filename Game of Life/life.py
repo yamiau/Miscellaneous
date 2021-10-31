@@ -81,7 +81,7 @@ while not game_over:
             row = int(pos[1] / (cell_length + cell_margin))
             grid[row][col] = not grid[row][col]
         elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_KP_ENTER or event.key == pygame.K_RETURN:
+            if event.key == pygame.K_SPACE:
                 running = not running
             elif event.key == pygame.K_ESCAPE:
                 grid = initialize_grid((total_cell_number, total_cell_number))
