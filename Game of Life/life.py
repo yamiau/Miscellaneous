@@ -9,17 +9,21 @@ def initialize_grid(size):
 
 
 def run_life(grid):
+    next_grid = [[False for i in range(len(grid))] for j in range(len(grid))]
+
     for row in range(len(grid)):
          for col in range(len(grid)):
-            cell = grid[row][col]
             neighbors = count_neighbors(grid, (row, col))
-
-            if cell and (neighbors < 2 or neighbors > 3):
-                cell = False
+            if grid[row][col]:
+                if neighbors < 2 or neighbors > 3:
+                    next_grid[row][col] = False
+                else:
+                    next_grid[row][col] = True
             else:
                 if neighbors == 3:
-                    cell = True
-    return grid
+                    next_grid[row][col] = True
+
+    return next_grid
 
 def count_neighbors(grid, pos):
     search = [(pos[0] -1, pos[1]),
@@ -37,7 +41,8 @@ def count_neighbors(grid, pos):
             if grid[i[0]][i[1]] == True:
                 neighbors += 1
         except IndexError:
-            continue
+            pass
+        continue
     return neighbors
 
 
