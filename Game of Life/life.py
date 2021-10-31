@@ -66,7 +66,6 @@ cell_length = screen_height // total_cell_number
 cell_margin = 1
 color = {True: (128, 128, 128), False: (0, 0, 0)}
 grid = initialize_grid((total_cell_number, total_cell_number))
-grid[50][50] = True
 running = False
 
 # Game main
