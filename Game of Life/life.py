@@ -79,7 +79,7 @@ while not game_over:
             pos = pygame.mouse.get_pos()
             col = int(pos[0] / (cell_length + cell_margin))
             row = int(pos[1] / (cell_length + cell_margin))
-            grid[row][col] = True
+            grid[row][col] = not grid[row][col]
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_KP_ENTER or event.key == pygame.K_RETURN:
                 running = not running
