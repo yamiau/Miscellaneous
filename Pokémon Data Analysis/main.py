@@ -9,18 +9,18 @@ FILE_PATH = 'pokemon full list.xlsx'
 #Set up parser for the pokémon list
 poke_list = 'https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VIII-present)'
 list_page = requests.get(poke_list)
-list_soup = BeautifulSoup(list_page.text, 'html.parser')
+base_soup = BeautifulSoup(list_page.text, 'html.parser')
 
-index = 1054
+index = 765
 
 
 #Scrape pokémon number
-numtags = list_soup.find_all('td', class_='r')[index]
+numtags = base_soup.find_all('td', class_='r')[index]
 num = numtags.find_all('b')[0].string
 
 
 #Scrape pokémon name
-nametags = list_soup.find_all('td', class_='l')[index]
+nametags = base_soup.find_all('td', class_='l')[index]
 try:
     namesubtags = nametags.find_all('small')[0].string
     name = [nametags.find_all('a')[0].string, namesubtags]
@@ -38,12 +38,12 @@ single_soup = BeautifulSoup(single_page.text, 'html.parser')
 typetags = single_soup.find_all('td', width='45px')[0]
 type1 = typetags.find_all('a')[0].string
 typetags = single_soup.find_all('td', width='45px')[1]
-type2 = typetags.find_all('a')[0].string
+type2 = None if 'Unknown' in typetags.find_all('a')[0].string else typetags.find_all('a')[0].string
 type = [type1, type2]
 
 
 #Scrape pokémon base stats
-stattags = list_soup.find_all('tr', style='text-align: center; background:#FFF')[index].contents
+stattags = base_soup.find_all('tr', style='text-align: center; background:#FFF')[index].contents
 statsubtags = stattags[9]
 
 
@@ -53,6 +53,18 @@ stat_index = 7
 while stat_index <= 21:
     stats.append(float(stattags[stat_index].string[:-1]))
     stat_index +=2
+
+
+#Scrape pokémon ability
+abilitytags = single_soup.find_all('td', width='50%', style=False)
+
+ability = []
+
+td_index = 1
+while td_index < 5:
+    if '(Ability)' in str(abilitytags[td_index]):
+        ability.append(str(abilitytags[td_index]).split('(Ability)')[1][9:-1])
+    td_index += 1
 
 
 #Scrape pokémon gender ratio
@@ -88,14 +100,42 @@ except:
         catch = [0.0, 0.0]
 
 
+#Scrape pokémon height
+
+
 #Scrape pokémon picture
 num_text = str(num)
 while len(num_text) < 3:
     num_text = '0' + num_text
 
-name_text = name[0] + '-' + name[1][1:-1]  if name[1] == True else name[0]
+name_text = name[0]
 
-picture_address = 'https://bulbapedia.bulbagarden.net/wiki/File:{}{}.png'.format( num_text, name_text)
+if name[1]:
+    if 'Mega' in name[1]:
+        name_text += '-Mega'
+    elif 'Forme' in name[1]:
+        name_text += name[1].split(' ')[1][:-1]
+    elif 'Therian' in name[1]:
+        name_text += '-Therian'
+    elif 'Galarian' in name[1]:
+        if 'Zen' in name[1]:
+            name_text += '-Galar-Zen'
+        else:
+            name_text += '-Galar'
+    elif 'Alolan' in name[1]:
+        name_text += '-Alola'
+    elif 'Hisuian' in name[1]:
+        name_text += '-Hisui'
+    elif 'Partner' in name[1]:
+        name_text += '_LG'
+    else:
+        try:
+            name1 = name[1].split(' ')
+            name_text += '-' + name1[0][1:]
+        except:
+            name_text += '-' + name[1][1:-1]
+
+picture_address = 'https://bulbapedia.bulbagarden.net/wiki/File:{}{}.png'.format(num_text, name_text)
 picture_page = requests.get(picture_address)
 picture_soup= BeautifulSoup(picture_page.text, 'html.parser')
 picturetags = picture_soup.find_all('div', class_="fullImageLink", id="file")[0]
@@ -103,11 +143,14 @@ picturea = str(picturetags.find_all('a', href=True)[0]).split('"')
 picture = picturea[1]
 
 
+
+
+
 print(num)
 print(name)
-print(poke_single)
 print(type)
 print(stats)
+print(ability)
 print(gender)
 print(catch)
 print(picture)
