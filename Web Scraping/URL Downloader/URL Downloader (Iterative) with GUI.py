@@ -40,6 +40,8 @@ def main():
 	needs_onset = False if len(str_index) == len(str(index)) else True
 	
 	endex = int(endex_entry.get())
+
+	coda = coda_entry.get()
 	
 	extension = extension_entry.get()
 	extension = extension.lower() if "." in extension else "." + extension.lower()
@@ -53,18 +55,27 @@ def main():
 	if needs_onset:
 		for i in range(index, endex+1):
 			onset = find_onset(str_index, index)
-			file_name = onset + str(index) + extension
+			if len(coda) < 1:
+				file_name = onset + str(index) + extension
+				full_path = path + "\\" + file_name
+			else:
+				file_name = onset + str(index) + coda + extension
+				full_path = path + "\\" + str(index) + extension
 			url = base_url + file_name
-			full_path = path + "\\" + file_name
 			save_from_url(onset, index,url, full_path)
 			index += 1
 	else:
 		for i in range(index, endex+1):
 			onset = ""
-			file_name = str(index) + extension
+			if len(coda) < 1:
+				file_name = str(index) + extension
+				full_path = path + "\\" + file_name
+			else:
+				file_name = str(index) + coda
+
+			print(full_path)
 			url = base_url + file_name
-			full_path = path + "\\" + file_name
-			save_from_url(onset, index,url, full_path)
+			save_from_url(onset, index, url, full_path)
 			index += 1
 
 user32 = ctypes.windll.user32
@@ -98,15 +109,20 @@ endex_lb.grid(row = 2, column = 0, sticky = "e")
 endex_entry = tk.Entry(frame)
 endex_entry.grid(row = 2, column = 1, sticky = "we")
 
-extension_lb = tk.Label(frame, text = "File extension :")
-extension_lb.grid(row = 3, column = 0, sticky = "e")
+coda_lb = tk.Label(frame, text = "Coda (text after index) :")
+coda_lb.grid(row = 3, column = 0, sticky = "e")
+coda_entry = tk.Entry(frame)
+coda_entry.grid(row = 3, column = 1, sticky = "we")
+
+extension_lb = tk.Label(frame, text = "File extension (diff or absent from coda) :")
+extension_lb.grid(row = 4, column = 0, sticky = "e")
 extension_entry = tk.Entry(frame)
-extension_entry.grid(row = 3, column = 1, sticky = "we")
+extension_entry.grid(row = 4, column = 1, sticky = "we")
 
 path_lb = tk.Label(frame, text = "Path to saving directory :")
-path_lb.grid(row = 4, column = 0)
+path_lb.grid(row = 5, column = 0)
 path_entry = tk.Entry(frame)
-path_entry.grid(row = 4, column = 1, sticky = "we")
+path_entry.grid(row = 5, column = 1, sticky = "we")
 
 frame2 = tk.Frame(root)
 frame2.pack()
