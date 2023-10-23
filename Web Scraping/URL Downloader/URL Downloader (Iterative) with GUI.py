@@ -61,6 +61,9 @@ def main():
 			else:
 				file_name = onset + str(index) + coda + extension
 				full_path = path + "\\" + str(index) + extension
+			url = base_url + file_name
+			save_from_url(onset, index, url, full_path)
+			index += 1
 
 	else:
 		for i in range(index, endex+1):
@@ -71,10 +74,11 @@ def main():
 			else:
 				file_name = str(index) + coda
 				full_path = path + "\\" + str(index) + extension
+			url = base_url + file_name
+			save_from_url(onset, index, url, full_path)
+			index += 1
 
-	url = base_url + file_name
-	save_from_url(onset, index, url, full_path)
-	index += 1
+
 
 user32 = ctypes.windll.user32
 HEIGHT  = user32.GetSystemMetrics(0)* 0.1 
