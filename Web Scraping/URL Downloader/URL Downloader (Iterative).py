@@ -53,9 +53,7 @@ if needs_onset:
 		else:
 			file_name = onset + str(index) + coda + extension
 			full_path = path + "\\" + str(index) + extension
-		url = base_url + file_name
-		save_from_url(onset, index, url, full_path)
-		index += 1
+
 else:
 	for i in range(index, endex + 1):
 		onset = ""
@@ -64,8 +62,8 @@ else:
 			full_path = path + "\\" + file_name
 		else:
 			file_name = str(index) + coda
+			full_path = path + "\\" + str(index) + extension
 
-		print(full_path)
-		url = base_url + file_name
-		save_from_url(onset, index, url, full_path)
-		index += 1
+url = base_url + file_name
+save_from_url(onset, index, url, full_path)
+index += 1
